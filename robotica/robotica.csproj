@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E654CF0D-6ADF-45F9-BA23-871A619E263D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>robotica</RootNamespace>
+    <AssemblyName>robotica</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="Gui_submenus_formularios">
+      <HintPath>..\..\ConvertSystems\librerias_compiladas\Gui_submenus_formularios.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clases\ConexionESP32.cs" />
+    <Compile Include="ConfiguracionDeControles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfiguracionDeControles.Designer.cs">
+      <DependentUpon>ConfiguracionDeControles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_Control.Designer.cs">
+      <DependentUpon>Panel_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nav_controller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nav_controller.Designer.cs">
+      <DependentUpon>nav_controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConfiguracionDeControles.resx">
+      <DependentUpon>ConfiguracionDeControles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_Control.resx">
+      <DependentUpon>Panel_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nav_controller.resx">
+      <DependentUpon>nav_controller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\derecho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\izquierdo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torreta_arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torreta_derecho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torreta_izquierdo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torreta_abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luz_apagada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luz_encendida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intermitente_izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intermitente_derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_convertsystems sin fondo-05.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
