@@ -190,5 +190,77 @@ namespace robotica.Properties {
                 this["T_Reset"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool btn_luces {
+            get {
+                return ((bool)(this["btn_luces"]));
+            }
+            set {
+                this["btn_luces"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool btn_advertencia {
+            get {
+                return ((bool)(this["btn_advertencia"]));
+            }
+            set {
+                this["btn_advertencia"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool btn_i_derecho {
+            get {
+                return ((bool)(this["btn_i_derecho"]));
+            }
+            set {
+                this["btn_i_derecho"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool btn_i_izquierdo {
+            get {
+                return ((bool)(this["btn_i_izquierdo"]));
+            }
+            set {
+                this["btn_i_izquierdo"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool btn_activar_s_humedad {
+            get {
+                return ((bool)(this["btn_activar_s_humedad"]));
+            }
+            set {
+                this["btn_activar_s_humedad"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool btn_conectar {
+            get {
+                return ((bool)(this["btn_conectar"]));
+            }
+            set {
+                this["btn_conectar"] = value;
+            }
+        }
     }
 }

@@ -35,8 +35,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbl_conexion_remota = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.btn_configuracion = new System.Windows.Forms.Button();
+            this.btn_cerrar_programa = new System.Windows.Forms.Button();
+            this.btn_Humedad = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_restablecer_posicion_torreta = new System.Windows.Forms.Button();
             this.btn_intermitente_derecho = new System.Windows.Forms.Button();
             this.btn_intermitente_advertencia = new System.Windows.Forms.Button();
@@ -51,57 +53,51 @@
             this.btn_robot_izquierda = new System.Windows.Forms.Button();
             this.btn_robot_avanzar = new System.Windows.Forms.Button();
             this.camara = new System.Windows.Forms.PictureBox();
-            this.btn_cerrar_programa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.camara)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_temperatura
             // 
-            this.lbl_temperatura.AutoSize = true;
-            this.lbl_temperatura.ForeColor = System.Drawing.Color.Black;
-            this.lbl_temperatura.Location = new System.Drawing.Point(729, 426);
+            this.lbl_temperatura.ForeColor = System.Drawing.Color.White;
+            this.lbl_temperatura.Location = new System.Drawing.Point(724, 472);
             this.lbl_temperatura.Name = "lbl_temperatura";
-            this.lbl_temperatura.Size = new System.Drawing.Size(211, 20);
+            this.lbl_temperatura.Size = new System.Drawing.Size(250, 20);
             this.lbl_temperatura.TabIndex = 17;
             this.lbl_temperatura.Text = "Temperatura No Recivida";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(729, 455);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(724, 492);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 20);
+            this.label1.Size = new System.Drawing.Size(250, 20);
             this.label1.TabIndex = 24;
             this.label1.Text = "Estado Motor No Recivido";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(729, 487);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(724, 513);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(248, 20);
+            this.label2.Size = new System.Drawing.Size(250, 20);
             this.label2.TabIndex = 25;
             this.label2.Text = "Estado Humedad No Recivida";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(729, 543);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(724, 553);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(227, 20);
+            this.label4.Size = new System.Drawing.Size(250, 20);
             this.label4.TabIndex = 27;
             this.label4.Text = "Estado bateria No Recivido";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(729, 514);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(724, 533);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(218, 20);
+            this.label5.Size = new System.Drawing.Size(250, 20);
             this.label5.TabIndex = 26;
             this.label5.Text = "Estado Riego No Recivido";
             // 
@@ -109,38 +105,21 @@
             // 
             this.lbl_conexion_remota.AutoSize = true;
             this.lbl_conexion_remota.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_conexion_remota.ForeColor = System.Drawing.Color.Black;
-            this.lbl_conexion_remota.Location = new System.Drawing.Point(756, 189);
+            this.lbl_conexion_remota.ForeColor = System.Drawing.Color.White;
+            this.lbl_conexion_remota.Location = new System.Drawing.Point(756, 177);
             this.lbl_conexion_remota.Name = "lbl_conexion_remota";
             this.lbl_conexion_remota.Size = new System.Drawing.Size(225, 20);
             this.lbl_conexion_remota.TabIndex = 29;
             this.lbl_conexion_remota.Text = "Desconectado con el robot";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(756, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 50);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "conectar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btn_configuracion
             // 
-            this.btn_configuracion.BackColor = System.Drawing.Color.Teal;
+            this.btn_configuracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_configuracion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_configuracion.FlatAppearance.BorderSize = 0;
             this.btn_configuracion.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_configuracion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_configuracion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_configuracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_configuracion.Location = new System.Drawing.Point(757, 227);
+            this.btn_configuracion.Location = new System.Drawing.Point(757, 200);
             this.btn_configuracion.Name = "btn_configuracion";
             this.btn_configuracion.Size = new System.Drawing.Size(217, 50);
             this.btn_configuracion.TabIndex = 32;
@@ -148,13 +127,63 @@
             this.btn_configuracion.UseVisualStyleBackColor = false;
             this.btn_configuracion.Click += new System.EventHandler(this.btn_configuracion_Click);
             // 
+            // btn_cerrar_programa
+            // 
+            this.btn_cerrar_programa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_cerrar_programa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cerrar_programa.FlatAppearance.BorderSize = 0;
+            this.btn_cerrar_programa.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btn_cerrar_programa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar_programa.Location = new System.Drawing.Point(757, 124);
+            this.btn_cerrar_programa.Name = "btn_cerrar_programa";
+            this.btn_cerrar_programa.Size = new System.Drawing.Size(217, 50);
+            this.btn_cerrar_programa.TabIndex = 33;
+            this.btn_cerrar_programa.Text = "Cerrar";
+            this.btn_cerrar_programa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_cerrar_programa.UseVisualStyleBackColor = false;
+            this.btn_cerrar_programa.Click += new System.EventHandler(this.btn_cerrar_programa_Click);
+            // 
+            // btn_Humedad
+            // 
+            this.btn_Humedad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_Humedad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Humedad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Humedad.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btn_Humedad.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.btn_Humedad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Humedad.Image = global::robotica.Properties.Resources.Humedad_inactivo;
+            this.btn_Humedad.Location = new System.Drawing.Point(756, 68);
+            this.btn_Humedad.Name = "btn_Humedad";
+            this.btn_Humedad.Size = new System.Drawing.Size(50, 50);
+            this.btn_Humedad.TabIndex = 34;
+            this.btn_Humedad.UseVisualStyleBackColor = false;
+            this.btn_Humedad.Click += new System.EventHandler(this.btn_Humedad_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Image = global::robotica.Properties.Resources.Desconectar_Robot;
+            this.button1.Location = new System.Drawing.Point(812, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(162, 50);
+            this.button1.TabIndex = 30;
+            this.button1.Text = " Desconectado";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btn_restablecer_posicion_torreta
             // 
             this.btn_restablecer_posicion_torreta.BackColor = System.Drawing.Color.Teal;
+            this.btn_restablecer_posicion_torreta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_restablecer_posicion_torreta.FlatAppearance.BorderSize = 0;
             this.btn_restablecer_posicion_torreta.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_restablecer_posicion_torreta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_restablecer_posicion_torreta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_restablecer_posicion_torreta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_restablecer_posicion_torreta.Image = ((System.Drawing.Image)(resources.GetObject("btn_restablecer_posicion_torreta.Image")));
             this.btn_restablecer_posicion_torreta.Location = new System.Drawing.Point(469, 467);
@@ -166,12 +195,12 @@
             // 
             // btn_intermitente_derecho
             // 
-            this.btn_intermitente_derecho.BackColor = System.Drawing.Color.Teal;
-            this.btn_intermitente_derecho.FlatAppearance.BorderSize = 0;
+            this.btn_intermitente_derecho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_intermitente_derecho.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_intermitente_derecho.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_intermitente_derecho.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_intermitente_derecho.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.btn_intermitente_derecho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_intermitente_derecho.Image = global::robotica.Properties.Resources.intermitente_derecha;
+            this.btn_intermitente_derecho.Image = global::robotica.Properties.Resources.intermitente_derecha_apagado;
             this.btn_intermitente_derecho.Location = new System.Drawing.Point(924, 12);
             this.btn_intermitente_derecho.Name = "btn_intermitente_derecho";
             this.btn_intermitente_derecho.Size = new System.Drawing.Size(50, 50);
@@ -181,12 +210,12 @@
             // 
             // btn_intermitente_advertencia
             // 
-            this.btn_intermitente_advertencia.BackColor = System.Drawing.Color.Teal;
-            this.btn_intermitente_advertencia.FlatAppearance.BorderSize = 0;
+            this.btn_intermitente_advertencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_intermitente_advertencia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_intermitente_advertencia.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_intermitente_advertencia.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_intermitente_advertencia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.btn_intermitente_advertencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_intermitente_advertencia.Image = global::robotica.Properties.Resources.advertencia;
+            this.btn_intermitente_advertencia.Image = global::robotica.Properties.Resources.advertencia_apagado;
             this.btn_intermitente_advertencia.Location = new System.Drawing.Point(868, 12);
             this.btn_intermitente_advertencia.Name = "btn_intermitente_advertencia";
             this.btn_intermitente_advertencia.Size = new System.Drawing.Size(50, 50);
@@ -196,12 +225,12 @@
             // 
             // btn_intermitente_izquierdo
             // 
-            this.btn_intermitente_izquierdo.BackColor = System.Drawing.Color.Teal;
-            this.btn_intermitente_izquierdo.FlatAppearance.BorderSize = 0;
+            this.btn_intermitente_izquierdo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_intermitente_izquierdo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_intermitente_izquierdo.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_intermitente_izquierdo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_intermitente_izquierdo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.btn_intermitente_izquierdo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_intermitente_izquierdo.Image = global::robotica.Properties.Resources.intermitente_izquierda;
+            this.btn_intermitente_izquierdo.Image = global::robotica.Properties.Resources.intermitente_izquierda_apagado;
             this.btn_intermitente_izquierdo.Location = new System.Drawing.Point(812, 12);
             this.btn_intermitente_izquierdo.Name = "btn_intermitente_izquierdo";
             this.btn_intermitente_izquierdo.Size = new System.Drawing.Size(50, 50);
@@ -211,12 +240,12 @@
             // 
             // btn_luz
             // 
-            this.btn_luz.BackColor = System.Drawing.Color.Teal;
-            this.btn_luz.FlatAppearance.BorderSize = 0;
+            this.btn_luz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_luz.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_luz.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btn_luz.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_luz.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
             this.btn_luz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_luz.Image = global::robotica.Properties.Resources.luz_encendida;
+            this.btn_luz.Image = ((System.Drawing.Image)(resources.GetObject("btn_luz.Image")));
             this.btn_luz.Location = new System.Drawing.Point(756, 12);
             this.btn_luz.Name = "btn_luz";
             this.btn_luz.Size = new System.Drawing.Size(50, 50);
@@ -227,10 +256,9 @@
             // button2btn_riego_manual_abajo
             // 
             this.button2btn_riego_manual_abajo.BackColor = System.Drawing.Color.Teal;
+            this.button2btn_riego_manual_abajo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2btn_riego_manual_abajo.FlatAppearance.BorderSize = 0;
             this.button2btn_riego_manual_abajo.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.button2btn_riego_manual_abajo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.button2btn_riego_manual_abajo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button2btn_riego_manual_abajo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2btn_riego_manual_abajo.Image = global::robotica.Properties.Resources.Torreta_abajo;
             this.button2btn_riego_manual_abajo.Location = new System.Drawing.Point(469, 523);
@@ -244,10 +272,9 @@
             // btn_riego_manual_derecha
             // 
             this.btn_riego_manual_derecha.BackColor = System.Drawing.Color.Teal;
+            this.btn_riego_manual_derecha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_riego_manual_derecha.FlatAppearance.BorderSize = 0;
             this.btn_riego_manual_derecha.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_riego_manual_derecha.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_riego_manual_derecha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_riego_manual_derecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_riego_manual_derecha.Image = global::robotica.Properties.Resources.Torreta_derecho;
             this.btn_riego_manual_derecha.Location = new System.Drawing.Point(525, 467);
@@ -261,10 +288,9 @@
             // btn_riego_manual_izquierda
             // 
             this.btn_riego_manual_izquierda.BackColor = System.Drawing.Color.Teal;
+            this.btn_riego_manual_izquierda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_riego_manual_izquierda.FlatAppearance.BorderSize = 0;
             this.btn_riego_manual_izquierda.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_riego_manual_izquierda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_riego_manual_izquierda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_riego_manual_izquierda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_riego_manual_izquierda.Image = global::robotica.Properties.Resources.Torreta_izquierdo;
             this.btn_riego_manual_izquierda.Location = new System.Drawing.Point(413, 467);
@@ -278,10 +304,9 @@
             // btn_riego_manual_arriba
             // 
             this.btn_riego_manual_arriba.BackColor = System.Drawing.Color.Teal;
+            this.btn_riego_manual_arriba.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_riego_manual_arriba.FlatAppearance.BorderSize = 0;
             this.btn_riego_manual_arriba.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_riego_manual_arriba.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_riego_manual_arriba.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_riego_manual_arriba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_riego_manual_arriba.Image = global::robotica.Properties.Resources.Torreta_arriba;
             this.btn_riego_manual_arriba.Location = new System.Drawing.Point(469, 411);
@@ -295,10 +320,9 @@
             // btn_robot_retroceder
             // 
             this.btn_robot_retroceder.BackColor = System.Drawing.Color.Teal;
+            this.btn_robot_retroceder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_robot_retroceder.FlatAppearance.BorderSize = 0;
             this.btn_robot_retroceder.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_robot_retroceder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_robot_retroceder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_robot_retroceder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_robot_retroceder.Image = global::robotica.Properties.Resources.abajo;
             this.btn_robot_retroceder.Location = new System.Drawing.Point(68, 523);
@@ -312,10 +336,9 @@
             // btn_robot_derecha
             // 
             this.btn_robot_derecha.BackColor = System.Drawing.Color.Teal;
+            this.btn_robot_derecha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_robot_derecha.FlatAppearance.BorderSize = 0;
             this.btn_robot_derecha.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_robot_derecha.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_robot_derecha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_robot_derecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_robot_derecha.Image = global::robotica.Properties.Resources.derecho;
             this.btn_robot_derecha.Location = new System.Drawing.Point(124, 467);
@@ -329,10 +352,9 @@
             // btn_robot_izquierda
             // 
             this.btn_robot_izquierda.BackColor = System.Drawing.Color.Teal;
+            this.btn_robot_izquierda.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_robot_izquierda.FlatAppearance.BorderSize = 0;
             this.btn_robot_izquierda.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_robot_izquierda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_robot_izquierda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_robot_izquierda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_robot_izquierda.Image = global::robotica.Properties.Resources.izquierdo;
             this.btn_robot_izquierda.Location = new System.Drawing.Point(12, 467);
@@ -346,10 +368,9 @@
             // btn_robot_avanzar
             // 
             this.btn_robot_avanzar.BackColor = System.Drawing.Color.Teal;
+            this.btn_robot_avanzar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_robot_avanzar.FlatAppearance.BorderSize = 0;
             this.btn_robot_avanzar.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_robot_avanzar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_robot_avanzar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_robot_avanzar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_robot_avanzar.Image = global::robotica.Properties.Resources.arriba;
             this.btn_robot_avanzar.Location = new System.Drawing.Point(68, 411);
@@ -369,28 +390,13 @@
             this.camara.TabIndex = 0;
             this.camara.TabStop = false;
             // 
-            // btn_cerrar_programa
-            // 
-            this.btn_cerrar_programa.BackColor = System.Drawing.Color.Teal;
-            this.btn_cerrar_programa.FlatAppearance.BorderSize = 0;
-            this.btn_cerrar_programa.FlatAppearance.CheckedBackColor = System.Drawing.Color.Black;
-            this.btn_cerrar_programa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Lime;
-            this.btn_cerrar_programa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_cerrar_programa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_cerrar_programa.Location = new System.Drawing.Point(757, 124);
-            this.btn_cerrar_programa.Name = "btn_cerrar_programa";
-            this.btn_cerrar_programa.Size = new System.Drawing.Size(217, 50);
-            this.btn_cerrar_programa.TabIndex = 33;
-            this.btn_cerrar_programa.Text = "Cerrar";
-            this.btn_cerrar_programa.UseVisualStyleBackColor = false;
-            this.btn_cerrar_programa.Click += new System.EventHandler(this.btn_cerrar_programa_Click);
-            // 
             // Panel_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(986, 585);
+            this.Controls.Add(this.btn_Humedad);
             this.Controls.Add(this.btn_cerrar_programa);
             this.Controls.Add(this.btn_configuracion);
             this.Controls.Add(this.button1);
@@ -415,7 +421,7 @@
             this.Controls.Add(this.btn_robot_avanzar);
             this.Controls.Add(this.camara);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Black;
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Panel_Control";
@@ -455,6 +461,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_configuracion;
         private System.Windows.Forms.Button btn_cerrar_programa;
+        private System.Windows.Forms.Button btn_Humedad;
     }
 }
 

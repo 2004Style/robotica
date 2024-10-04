@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|c:\\users\\chave\\pictures\\escritorio\\lenguajes\\csharp\\windowsforms\\robotica\\robotica\\clases\\conexionesp32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|solutionrelative:robotica\\clases\\conexionesp32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\panel_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|c:\\users\\chave\\pictures\\escritorio\\lenguajes\\csharp\\windowsforms\\robotica\\robotica\\panel_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|solutionrelative:robotica\\panel_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,12 +11,8 @@
       "RelativeMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|solutionrelative:robotica\\panel_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\nav_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|solutionrelative:robotica\\nav_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\nav_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|solutionrelative:robotica\\nav_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\clases\\conexionesp32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E654CF0D-6ADF-45F9-BA23-871A619E263D}|robotica\\robotica.csproj|solutionrelative:robotica\\clases\\conexionesp32.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,61 +39,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ConexionESP32.cs",
-              "DocumentMoniker": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\clases\\ConexionESP32.cs",
-              "RelativeDocumentMoniker": "robotica\\clases\\ConexionESP32.cs",
-              "ToolTip": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\clases\\ConexionESP32.cs",
-              "RelativeToolTip": "robotica\\clases\\ConexionESP32.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T00:40:42.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Panel_Control.cs",
               "DocumentMoniker": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\Panel_Control.cs",
               "RelativeDocumentMoniker": "robotica\\Panel_Control.cs",
               "ToolTip": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\Panel_Control.cs",
               "RelativeToolTip": "robotica\\Panel_Control.cs",
-              "ViewState": "AQIAADkBAAAAAAAAAAAowE8CAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABkDAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T02:23:21.983Z"
+              "WhenOpened": "2024-10-02T23:34:01.743Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Panel_Control.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\Panel_Control.cs",
               "RelativeDocumentMoniker": "robotica\\Panel_Control.cs",
               "ToolTip": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\Panel_Control.cs [Dise\u00F1o]",
               "RelativeToolTip": "robotica\\Panel_Control.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T00:53:18.869Z"
+              "WhenOpened": "2024-10-02T23:34:30.564Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "nav_controller.cs",
-              "DocumentMoniker": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\nav_controller.cs",
-              "RelativeDocumentMoniker": "robotica\\nav_controller.cs",
-              "ToolTip": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\nav_controller.cs",
-              "RelativeToolTip": "robotica\\nav_controller.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "DocumentIndex": 2,
+              "Title": "ConexionESP32.cs",
+              "DocumentMoniker": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\clases\\ConexionESP32.cs",
+              "RelativeDocumentMoniker": "robotica\\clases\\ConexionESP32.cs",
+              "ToolTip": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\clases\\ConexionESP32.cs",
+              "RelativeToolTip": "robotica\\clases\\ConexionESP32.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAgwD4AAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T02:21:26.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "nav_controller.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\nav_controller.cs",
-              "RelativeDocumentMoniker": "robotica\\nav_controller.cs",
-              "ToolTip": "C:\\Users\\chave\\Pictures\\Escritorio\\Lenguajes\\CSharp\\WindowsForms\\robotica\\robotica\\nav_controller.cs [Dise\u00F1o]",
-              "RelativeToolTip": "robotica\\nav_controller.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T01:38:50.369Z"
+              "WhenOpened": "2024-08-26T00:40:42.011Z"
             }
           ]
         }

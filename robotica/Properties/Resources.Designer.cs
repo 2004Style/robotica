@@ -73,9 +73,19 @@ namespace robotica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap advertencia {
+        internal static System.Drawing.Bitmap advertencia_apagado {
             get {
-                object obj = ResourceManager.GetObject("advertencia", resourceCulture);
+                object obj = ResourceManager.GetObject("advertencia_apagado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap advertencia_encendido {
+            get {
+                object obj = ResourceManager.GetObject("advertencia_encendido", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,6 +103,16 @@ namespace robotica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Conectar_Robot {
+            get {
+                object obj = ResourceManager.GetObject("Conectar_Robot", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap derecho {
             get {
                 object obj = ResourceManager.GetObject("derecho", resourceCulture);
@@ -103,9 +123,9 @@ namespace robotica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap intermitente_derecha {
+        internal static System.Drawing.Bitmap Desconectar_Robot {
             get {
-                object obj = ResourceManager.GetObject("intermitente_derecha", resourceCulture);
+                object obj = ResourceManager.GetObject("Desconectar_Robot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +133,59 @@ namespace robotica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap intermitente_izquierda {
+        internal static System.Drawing.Bitmap Humedad_activado {
             get {
-                object obj = ResourceManager.GetObject("intermitente_izquierda", resourceCulture);
+                object obj = ResourceManager.GetObject("Humedad_activado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Humedad_inactivo {
+            get {
+                object obj = ResourceManager.GetObject("Humedad_inactivo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap intermitente_derecha_apagado {
+            get {
+                object obj = ResourceManager.GetObject("intermitente_derecha_apagado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap intermitente_derecha_encendido {
+            get {
+                object obj = ResourceManager.GetObject("intermitente_derecha_encendido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap intermitente_izquierda_apagado {
+            get {
+                object obj = ResourceManager.GetObject("intermitente_izquierda_apagado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap intermitente_izquierda_encendido {
+            get {
+                object obj = ResourceManager.GetObject("intermitente_izquierda_encendido", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
