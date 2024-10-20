@@ -1,12 +1,18 @@
 ﻿using robotica.clases;
 using System;
 using System.Drawing;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace robotica
 {
     public partial class Panel_Control : Form
     {
+        //StreamESP32 StreamESP32 = new StreamESP32();
+        private ESP32_CAMTCP Esp32Cam = new ESP32_CAMTCP();
+        private ConexionESP32 ESP32 = new ConexionESP32();
+
+
         //variables para manejar las direcciones del robot
         public String Direccion_robot = null;
 
@@ -27,13 +33,22 @@ namespace robotica
         public Panel_Control()
         {
             InitializeComponent();
+            ESP32.IP_Esp32DevKit = "192.168.67.1";
+            ESP32.Port_Esp32DevKit= 80;
+
+            Esp32Cam.IP_Esp32Cam = "192.168.67.71";
+            Esp32Cam.Port_Esp32Cam = 81;
+            Esp32Cam.pictureBox = camara;
+
+
             ComprobarBtns();
             this.KeyPreview = true;
             formMover = new moverformulario(this, this);
         }
 
+        
+
         #region conexion del robot y verificacion de estados
-        ConexionESP32 ESP32 = new ConexionESP32();
         //este metodo se encarga de revisar todas las variables almacenadas de los botones y ver su estado si estan en true o false segun el valor correspondiente se realizaran acciones esto es eficas para el momento de ejecutar la aplicacion
         //ejemplo
         //si la ven anterior que estuvimos en la aplicacion dejamos las luces enecendidas entonces al acceder a la aplicacion este boton estara activado devido a que su valor sera un true caso contrario estaria desactivado esto funciona perfecto para tener sincronizado los valores del robot con la aplicacion ya que si dejamos las luces activadas y no verificamos al abrir la aplicacion nuevamente saldria desactivado cuando en la placa del robot su ultimi order fue que esten activas
@@ -103,7 +118,7 @@ namespace robotica
             {
                 button1.Image = Properties.Resources.Conectar_Robot;
                 button1.FlatAppearance.BorderColor = Color.Lime;
-                ESP32.conexion(button1, lbl_conexion_remota);
+                ESP32.conexion(button1, lbl_conexion_remota, camara);
             }
             else
             {
@@ -114,7 +129,7 @@ namespace robotica
         //boton para establecer la conexion con el robot
         private void button1_Click(object sender, EventArgs e)
         {
-            ESP32.conexion(button1,lbl_conexion_remota);
+            ESP32.conexion(button1,lbl_conexion_remota,camara);
         }
         //acciones que suceden cuendo el formulario se cierra
         private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
@@ -122,6 +137,15 @@ namespace robotica
             Properties.Settings.Default.btn_conectar = false;
             ESP32.CerrarCOnexionESP32();
         }
+
+        private void Panel_Control_Load(object sender, EventArgs e)
+        {
+            //Esp32Cam = new ESP32_CAMTCP(camara);
+            //Esp32Cam.StartReceiving(); // Reemplaza con la IP de tu ESP32
+        }
+
+
+
         //acciones que pasan cuando el boton de configuracion es accionado => en este caso se encarga de cerrar la conexion con el esp32 para que al regresar al panel de control no haya errores de conexion con el robot
         private void btn_configuracion_Click(object sender, EventArgs e)
         {
@@ -645,7 +669,7 @@ namespace robotica
             else if (e.KeyCode.ToString() == conectarKey && !m_KeyPressed)
             {
                 m_KeyPressed = true;
-                ESP32.conexion(button1, lbl_conexion_remota);
+                ESP32.conexion(button1, lbl_conexion_remota, camara);
             }
         }
 
@@ -790,5 +814,7 @@ namespace robotica
             Sensor_Humedad();
         }
         #endregion sensor de humedad
+
+        
     }
 }

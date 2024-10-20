@@ -63,7 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\ConexionESP32.cs" />
+    <Compile Include="clases\ESP32_CAMTCP.cs" />
     <Compile Include="clases\moverformulario.cs" />
+    <Compile Include="clases\StreamESP32.cs" />
     <Compile Include="ConfiguracionDeControles.cs">
       <SubType>Form</SubType>
     </Compile>
