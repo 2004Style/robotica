@@ -28,5 +28,10 @@ namespace robotica
             this.Visible = false;
             new Panel_Control().Visible = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

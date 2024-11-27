@@ -203,6 +203,16 @@ namespace robotica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_convertsystems_con_nombre_sin_fondo_08 {
+            get {
+                object obj = ResourceManager.GetObject("logo_convertsystems con nombre sin fondo-08", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_convertsystems_sin_fondo_05 {
             get {
                 object obj = ResourceManager.GetObject("logo_convertsystems sin fondo-05", resourceCulture);

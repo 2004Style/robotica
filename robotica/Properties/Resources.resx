@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Torreta_derecho" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Torreta_derecho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="luz_apagada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\luz_apagada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Conectar_Robot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Conectar_Robot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo_convertsystems sin fondo-05" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_convertsystems sin fondo-05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Desconectar_Robot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Desconectar_Robot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Humedad_inactivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Humedad_inactivo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="derecho" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\derecho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,11 +136,8 @@
   <data name="luz_encendida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\luz_encendida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arriba" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arriba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="abajo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abajo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Conectar_Robot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Conectar_Robot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="intermitente_derecha_apagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intermitente_derecha_apagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,8 +145,14 @@
   <data name="Torreta_izquierdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Torreta_izquierdo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="intermitente_izquierda_encendido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\intermitente_izquierda_encendido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="izquierdo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\izquierdo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Torreta_derecho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Torreta_derecho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="intermitente_derecha_encendido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intermitente_derecha_encendido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +163,11 @@
   <data name="advertencia_encendido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\advertencia_encendido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="intermitente_izquierda_encendido" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\intermitente_izquierda_encendido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Humedad_activado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Humedad_activado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abajo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abajo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Torreta_abajo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Torreta_abajo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,13 +178,10 @@
   <data name="intermitente_izquierda_apagado" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\intermitente_izquierda_apagado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Desconectar_Robot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Desconectar_Robot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="arriba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arriba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Humedad_activado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Humedad_activado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Humedad_inactivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Humedad_inactivo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo_convertsystems con nombre sin fondo-08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_convertsystems con nombre sin fondo-08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

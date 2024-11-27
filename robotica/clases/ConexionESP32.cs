@@ -12,10 +12,11 @@ namespace robotica.clases
 
         StreamESP32 StreamESP32 = new StreamESP32();
 
-        private ESP32_CAMTCP Esp32Cam = new ESP32_CAMTCP();
+        private ESP32_CAMTCP Esp32Cam;
 
-        public string IP_Esp32DevKit;
-        public int Port_Esp32DevKit;
+        private string IP_Esp32DevKit = "192.168.50.1";
+        private int Port_Esp32DevKit = 80;
+
 
         private TcpClient client;
         private StreamReader reader;
@@ -23,8 +24,10 @@ namespace robotica.clases
 
         public bool conexion_esp32 = true;
 
-        public void conexion(Button btn, Label label, PictureBox camara)
+        public void conexion(Button btn, Label label,PictureBox camara)
         {
+            Esp32Cam = new ESP32_CAMTCP(camara);
+            Esp32Cam.StartReceiving();
             if (conexion_esp32)
             {
                 conexion_esp32 = false;
@@ -46,7 +49,7 @@ namespace robotica.clases
 
 
                     //Task.Run(() => StreamESP32.StartStream(camara));
-                    //Esp32Cam = new ESP32_CAMTCP(camara);
+                    Esp32Cam = new ESP32_CAMTCP(camara);
                     Esp32Cam.StartReceiving();
                 }
                 catch (Exception ex)
@@ -71,13 +74,14 @@ namespace robotica.clases
                         btn.FlatAppearance.BorderColor = Color.Red;
                         Properties.Settings.Default.btn_conectar = false;
                         Properties.Settings.Default.Save();
+
+                        Esp32Cam.StopReceiving();
                     }
                 }
                 catch (Exception ex)
                 {
                     System.Windows.MessageBox.Show("Error de desconectado: " + ex.Message);
                 }
-
             }
         }
         public void enviardatos(string datos)
@@ -101,7 +105,7 @@ namespace robotica.clases
                 client.Close();
 
                 //StreamESP32.isStreaming = false;
-                Esp32Cam.StopReceiving();
+                //Esp32Cam.StopReceiving();
             }
         }
     }

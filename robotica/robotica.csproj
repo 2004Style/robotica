@@ -174,5 +174,8 @@
   <ItemGroup>
     <None Include="Resources\Humedad_inactivo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_convertsystems con nombre sin fondo-08.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Panel_Control));
-            this.lbl_temperatura = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.lbl_conexion_remota = new System.Windows.Forms.Label();
             this.btn_configuracion = new System.Windows.Forms.Button();
             this.btn_cerrar_programa = new System.Windows.Forms.Button();
@@ -55,51 +50,6 @@
             this.camara = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.camara)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lbl_temperatura
-            // 
-            this.lbl_temperatura.ForeColor = System.Drawing.Color.White;
-            this.lbl_temperatura.Location = new System.Drawing.Point(633, 564);
-            this.lbl_temperatura.Name = "lbl_temperatura";
-            this.lbl_temperatura.Size = new System.Drawing.Size(250, 20);
-            this.lbl_temperatura.TabIndex = 17;
-            this.lbl_temperatura.Text = "Temperatura No Recivida";
-            // 
-            // label1
-            // 
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(633, 584);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 20);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "Estado Motor No Recivido";
-            // 
-            // label2
-            // 
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(633, 605);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(250, 20);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "Estado Humedad No Recivida";
-            // 
-            // label4
-            // 
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(633, 645);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(250, 20);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Estado bateria No Recivido";
-            // 
-            // label5
-            // 
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(633, 625);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(250, 20);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Estado Riego No Recivido";
             // 
             // lbl_conexion_remota
             // 
@@ -384,9 +334,9 @@
             // camara
             // 
             this.camara.BackColor = System.Drawing.Color.Transparent;
-            this.camara.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("camara.BackgroundImage")));
             this.camara.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.camara.ErrorImage = ((System.Drawing.Image)(resources.GetObject("camara.ErrorImage")));
+            this.camara.Image = global::robotica.Properties.Resources.logo_convertsystems_con_nombre_sin_fondo_08;
             this.camara.Location = new System.Drawing.Point(12, 12);
             this.camara.Name = "camara";
             this.camara.Size = new System.Drawing.Size(640, 480);
@@ -406,15 +356,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_conexion_remota);
             this.Controls.Add(this.btn_restablecer_posicion_torreta);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_intermitente_derecho);
             this.Controls.Add(this.btn_intermitente_advertencia);
             this.Controls.Add(this.btn_intermitente_izquierdo);
             this.Controls.Add(this.btn_luz);
-            this.Controls.Add(this.lbl_temperatura);
             this.Controls.Add(this.button2btn_riego_manual_abajo);
             this.Controls.Add(this.btn_riego_manual_derecha);
             this.Controls.Add(this.btn_riego_manual_izquierda);
@@ -452,15 +397,10 @@
         private System.Windows.Forms.Button btn_riego_manual_derecha;
         private System.Windows.Forms.Button btn_riego_manual_izquierda;
         private System.Windows.Forms.Button btn_riego_manual_arriba;
-        private System.Windows.Forms.Label lbl_temperatura;
         private System.Windows.Forms.Button btn_luz;
         private System.Windows.Forms.Button btn_intermitente_izquierdo;
         private System.Windows.Forms.Button btn_intermitente_advertencia;
         private System.Windows.Forms.Button btn_intermitente_derecho;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_restablecer_posicion_torreta;
         private System.Windows.Forms.Label lbl_conexion_remota;
         private System.Windows.Forms.Button button1;

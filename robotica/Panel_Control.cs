@@ -9,7 +9,7 @@ namespace robotica
     public partial class Panel_Control : Form
     {
         //StreamESP32 StreamESP32 = new StreamESP32();
-        private ESP32_CAMTCP Esp32Cam = new ESP32_CAMTCP();
+        //private ESP32_CAMTCP Esp32Cam;
         private ConexionESP32 ESP32 = new ConexionESP32();
 
 
@@ -33,13 +33,8 @@ namespace robotica
         public Panel_Control()
         {
             InitializeComponent();
-            ESP32.IP_Esp32DevKit = "192.168.67.1";
-            ESP32.Port_Esp32DevKit= 80;
 
-            Esp32Cam.IP_Esp32Cam = "192.168.67.71";
-            Esp32Cam.Port_Esp32Cam = 81;
-            Esp32Cam.pictureBox = camara;
-
+            //Esp32Cam = new ESP32_CAMTCP(camara);
 
             ComprobarBtns();
             this.KeyPreview = true;
@@ -118,6 +113,7 @@ namespace robotica
             {
                 button1.Image = Properties.Resources.Conectar_Robot;
                 button1.FlatAppearance.BorderColor = Color.Lime;
+                //ESP32.conexion(button1, lbl_conexion_remota);
                 ESP32.conexion(button1, lbl_conexion_remota, camara);
             }
             else
@@ -129,7 +125,8 @@ namespace robotica
         //boton para establecer la conexion con el robot
         private void button1_Click(object sender, EventArgs e)
         {
-            ESP32.conexion(button1,lbl_conexion_remota,camara);
+            //ESP32.conexion(button1,lbl_conexion_remota);
+            ESP32.conexion(button1, lbl_conexion_remota, camara);
         }
         //acciones que suceden cuendo el formulario se cierra
         private void Form1_FormClosing_1(object sender, FormClosingEventArgs e)
@@ -140,7 +137,6 @@ namespace robotica
 
         private void Panel_Control_Load(object sender, EventArgs e)
         {
-            //Esp32Cam = new ESP32_CAMTCP(camara);
             //Esp32Cam.StartReceiving(); // Reemplaza con la IP de tu ESP32
         }
 
@@ -669,6 +665,7 @@ namespace robotica
             else if (e.KeyCode.ToString() == conectarKey && !m_KeyPressed)
             {
                 m_KeyPressed = true;
+                //ESP32.conexion(button1, lbl_conexion_remota);
                 ESP32.conexion(button1, lbl_conexion_remota, camara);
             }
         }
