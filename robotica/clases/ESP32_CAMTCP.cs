@@ -21,11 +21,6 @@ namespace robotica.clases
         private Thread receiveThread;
         public PictureBox pictureBox; // Referencia al PictureBox para mostrar la imagen
 
-        //public ESP32_CAMTCP(PictureBox pictureBox)
-        //{
-        //    this.pictureBox = pictureBox;
-        //}
-
         public void StartReceiving()
         {
             //client = new TcpClient("192.168.67.71", 81); // Conexión al servidor
